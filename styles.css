@@ -1,0 +1,183 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    }
+
+body{
+    font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: grid;
+    grid-template:
+    "a"
+    "b"
+    "c";
+}
+
+#header{
+    grid-area: a;
+    text-align: center;
+    font-size: 53px;
+    font-style: normal;
+    color: rgba(175, 47, 47, 0.171);
+    margin-bottom: 1rem;
+}
+
+h1{
+    font-weight: 100;
+}
+
+main{
+    grid-area: b;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer{
+    grid-area: c;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 10px;
+    color: #bfbfbf;
+}
+
+button{
+    padding: 5px;
+    border: none;
+    color: #7a7a7a;
+    margin: 5px;
+}
+
+#main-header{
+    display: grid;
+    grid-template:
+    "a b" ;
+    width: 550px;
+}
+
+#check-all{
+    grid-area: a;
+    display: block;
+    font-size: 25px;
+    padding: 1rem;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#input{
+    grid-area: b;
+    font-size: 25px;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+#input-form{
+    width: 505px;
+}
+
+#main-footer{
+    display: grid;
+    grid-template:
+    "a b c";
+}
+
+#counter{
+    grid-area: a;
+    margin: 5px;
+    padding: 5px;
+    color: #7a7a7a;
+    width: 130px;
+}
+
+#show-select{
+    grid-area: b;
+    display: inline-flex;
+    list-style: none;
+}
+
+#clear-completed{
+    grid-area: c;
+    margin: 0;
+    padding-right: 1rem;
+    border: none;
+    display: none;
+    text-align: end;
+}
+
+.hide-button{
+    display: none;
+}
+
+.submited-todo{
+    display: grid;
+    grid-template:
+    "a b c";
+    padding: 1rem;
+}
+
+.checkbox-element{
+    grid-area: a;
+    cursor: pointer;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+    opacity: 20%;
+}
+
+.checkbox-element:checked {
+    border: green;
+    background-color: green;
+  }
+
+#all{
+    border: 1px solid rgba(175, 47, 47, 0.137);
+    border-radius: 4px;
+}
+
+.p-element{
+    grid-area: b;
+    font-size: 25px;
+    width: 458px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#remove-element{
+    grid-area: c;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    border: none;
+    cursor: pointer;
+}
+
+#main-section{
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.253);
+    max-width: 550px;
+}
+
+#all,#active,#complete:hover{
+    cursor: pointer;
+}
+
+#clear-completed:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#remove-element:hover{
+    opacity: 1;
+}
+
+.p-element:hover + #remove-element{
+    opacity: 0.5;
+}

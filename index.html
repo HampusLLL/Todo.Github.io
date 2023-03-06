@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer> </script>
+    <title>TodoMVC</title>
+</head>
+<body>
+    <header id="header"#>
+        <h1 id="headline">todos</h1>
+    </header>
+    <main>
+        <section id="main-section">
+
+            <section id="main-header">
+                <button id="check-all" onclick="CheckAll()">▼</button>
+                <form id="input-form">
+                    <input type="text" id="input" placeholder="What needs to be done?">
+                </form>
+            </section>
+
+            <section id="main-main">
+                <ul id="todo-list">
+                </ul>
+            </section>
+
+            <section id="main-footer">
+                <span id="counter" class= "hide-button">
+                    <p id="counter-text"></p>
+                </span>
+                <ul id="show-select">
+                    <li><button type="submit" id="all" class= "hide-button" onclick= "ShowItems('all')">All</button></li>
+                    <li><button type="submit" id="active" class= "hide-button" onclick= "ShowItems('active')">Active</button></li>
+                    <li><button type="submit" id="complete" class= "hide-button" onclick= "ShowItems('complete')">Completed</button></li>
+                </ul>
+                <button id="clear-completed" onclick="ClearCompleted()">Clear completed</button>
+            </section>
+
+        </section>
+    </main>
+    <footer id="footer">
+        <p>Double-click to edit a todo</p>
+        <p>Written by Hampus Lindvall</p>
+        <p>Part of TodoMVC</p>
+    </footer>
+</body>
+</html>
