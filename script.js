@@ -60,7 +60,7 @@ function ShowButtons(){
     document.querySelector('#active').style.display = 'block';
     document.querySelector('#complete').style.display = 'block';
     document.querySelector('#counter').style.display = 'block';
-    document.querySelector('#check-all').style.opacity = '0.3';
+    document.querySelector('#check-all').style.opacity = '0.5';
     document.getElementById('clear-completed').style.display = 'block'
     document.getElementById('clear-completed').style.opacity = '0';
 }
