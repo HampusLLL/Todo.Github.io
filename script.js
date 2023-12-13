@@ -86,7 +86,7 @@ function CheckBox(index){
 
     if(check == true){
         document.getElementById('p-' + index).style.textDecoration = 'line-through';
-        document.getElementById('p-' + index).style.opacity = '0.3';
+        document.getElementById('p-' + index).style.opacity = '0.5';
         document.getElementById('clear-completed').style.opacity = '1';
         if(activeCheck == true){
             document.getElementById('div-' + index).style.display = 'none';
