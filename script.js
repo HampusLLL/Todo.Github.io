@@ -194,7 +194,7 @@ function ClearCompleted(){
         HideButtons();
     }
     else{
-        document.querySelector('#check-all').style.opacity = '0.3';
+        document.querySelector('#check-all').style.opacity = '0.5';
     }
 }
 
@@ -249,7 +249,7 @@ function CheckAll(){
         }
     }
     else{
-        document.querySelector('#check-all').style.opacity = '0.3';
+        document.querySelector('#check-all').style.opacity = '0.5';
         document.getElementById('clear-completed').style.opacity = '0';
 
         for(let i = 0; i < allChecked.length; i++){
