@@ -128,7 +128,7 @@ button{
     height: 30px;
     border-radius: 50%;
     border: 1px solid black;
-    opacity: 20%;
+    opacity: 40%;
 }
 
 .checkbox-element:checked {
